@@ -3,15 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve --project-mode dev",
+    "test": "vue-cli-service serve --project-mode test",
+    "pro": "vue-cli-service serve --project-mode pro",
+    "pre": "vue-cli-service serve --project-mode pre",
+    "build:dev": "vue-cli-service build --project-mode dev",
+    "build:test": "vue-cli-service build --project-mode test",
+    "build:pro": "vue-cli-service build --project-mode pro",
+    "build:pre": "vue-cli-service build --project-mode pre",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.2.2",
     "core-js": "^3.8.3",
+    "vant": "^2.12.53",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
